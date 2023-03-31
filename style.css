@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+
+h1 {
+    font-size: 900%;
+    background-image: linear-gradient(-225deg,
+            #6e1cb1 0%,
+            #0b16b8 25%,
+            #eb13ff 50%,
+            #00ffff 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: black;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 6s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+h2 {
+    font-size: 800%;
+    color: white;
+}
+
+h3 {
+    font-size: 400%;
+}
+
+p {
+    font-size: 200%;
+}
+
+button {
+    border: white solid;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+}
+
+.card {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(4, 26, 75, 0.801);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+}
+
+.card img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(.8);
+}
+
+.cardcontent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.firstletter {
+    background-image: linear-gradient(-225deg,
+            #6e1cb1 0%,
+            #0b16b8 25%,
+            #eb13ff 50%,
+            #00ffff 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 6s linear infinite;
+}
+
+.cardptext {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.aboutMeImgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    margin: 40px;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.5);
+}
+
+#pixelpc {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+}
+
+#pixelfarm {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+}
+
+#pixelworkout {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+}
+
+#pixelrotty {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+}
+
+.technologyImgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    flex-wrap: wrap;
+}
+
+.techImgColumn {
+    width: 200px;
+    height: 200px;
+    margin: 60px;
+}
+
+#html_logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#css_logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#js_logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projectsImgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.projectsImgsColumn {
+    width: 600px;
+    height: 600px;
+    margin: 60px;
+}
+
+.projectsImgsColumn img {
+    border-radius: 40%;
+}
+
+.footer {
+    background-color: rgba(33, 33, 112, 0.712);
+    color: white;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 90px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.fa-github {
+    background: black;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #1e49a5;
+    color: white;
+}
+
+.fa-yahoo {
+    background: rgb(99, 1, 99);
+    color: white
+}
